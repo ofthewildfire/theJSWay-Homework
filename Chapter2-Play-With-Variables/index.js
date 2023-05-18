@@ -80,3 +80,5 @@ number2 = 5;
 
 console.log("Num1 expected output 3: ", number1);
 console.log("Num2 expected output 5: ", number2);
+
+// finished
