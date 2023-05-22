@@ -66,4 +66,4 @@ function compareTwoNumbers(num1, num2) {
 	}
 }
 
-compareTwoNumbers("planet", 2);
+// compareTwoNumbers("planet", 2);
