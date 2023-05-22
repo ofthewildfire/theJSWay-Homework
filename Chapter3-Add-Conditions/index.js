@@ -13,6 +13,11 @@ const here = document.querySelector("#here");
 
 // Chapter 3: Coding time.
 
+/* 
+Following day
+Write a program that accepts a day name from the user, then shows the name of the following day. Incorrect inputs must be taken into account.
+*/
+
 // const day = prompt("What is the day?");
 function nextDay(day) {
 	day = day.toLowerCase().trim();
@@ -41,3 +46,24 @@ function nextDay(day) {
 }
 
 // nextDay(" thURSDAY");
+
+/* 
+Number comparison
+Write a program that accepts two numbers, then compares their values and displays an appropriate message in all cases.
+*/
+
+function compareTwoNumbers(num1, num2) {
+	num1 = Number(num1);
+	num2 = Number(num2);
+	if (num1 > num2) {
+		here.textContent = `${num1} is greater than ${num2}`;
+	} else if (num1 === num2) {
+		here.textContent = `${num1} & ${num2} are equal values.`;
+	} else if (num1 < num2) {
+		here.textContent = `${num1} is less than ${num2}`;
+	} else {
+		here.textContent = `Please enter a valid number`;
+	}
+}
+
+compareTwoNumbers("planet", 2);
