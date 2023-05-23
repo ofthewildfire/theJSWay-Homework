@@ -1,20 +1,23 @@
 * {
   font-family: sans-serif;
   text-align: center;
+  box-sizing: border-box;
 }
 
+/* 
 h1 {
   text-decoration: underline;
   text-decoration-color: teal;
-}
+} */
 
-body {
-  /* background-image: url(/bgjpg.jpg); */
-  background-blend-mode: lighten;
-  /* background-color: purple; */
-}
+/* body { */
 
-.results {
+/* background-image: url(/bgjpg.jpg); */
+/* background-blend-mode: lighten; */
+/* background-color: purple; */
+/* } */
+
+/* .results {
   border: 1px solid grey;
   height: 80vh;
   width: 100%;
@@ -24,9 +27,9 @@ body {
   color: wheat;
   line-height: 1.5;
   letter-spacing: 1.2px;
-}
+} */
 
-.item {
+/* .item {
   background: skyblue;
   border: slategrey 1px solid;
   border-radius: 5px;
@@ -61,4 +64,71 @@ body {
 .item:nth-of-type(8) {
   background: red;
   grid-column: 1 / 4;
+} */
+/* 
+body {
+  display: grid;
+  gap: 5px;
+  font-size: 2rem;
+  color: #fff;
+  background: rgb(174, 179, 184);
+
+  /*  */
+
+/* grid-template-areas: "header header header",
+"nav main sidebar",
+"nav footer footer";
+
+grid-template-columns: 1fr 3fr 1fr;
+grid-template-rows: 80px 1fr 50px;
+} */
+
+
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    "header header header"
+    "nav content sidebar"
+    "nav footer footer";
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 80px 1fr 60px;
+  gap: 5px;
+  color: white;
+  font-size: 40px;
+
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: content;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+nav {
+  grid-area: nav;
+}
+
+footer {
+  grid-area: footer;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+  background-color: rgb(14, 18, 9);
+  border: 2px solid rgb(12, 164, 223);
+}
+
+header {
+  background-color: red;
+  grid-area: header;
 }
