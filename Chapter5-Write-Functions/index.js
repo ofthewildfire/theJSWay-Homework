@@ -1,25 +1,60 @@
 /* 
-Calculator
-Complete the following program so that it offers the four basic arithmetical operations: addition, subtraction, multiplication and division. You can use either a function declaration or a function expression.
+Circumference and area of a circle
+Write a program containing two functions to calculate the circumference and area of a circle defined by its radius. Test it using user input.
+
+Here are some tips for solving this exercise:
+
+Circumference and area calculation formulas should be part of your secondary school memories... Or a Google click away :)
+The value of number π (Pi) is obtained with Math.PI in JavaScript.
+You might want to use the exponentiation operator ** to perform computations.Circumference and area of a circle
+Write a program containing two functions to calculate the circumference and area of a circle defined by its radius. Test it using user input.
+
+Here are some tips for solving this exercise:
+
+Circumference and area calculation formulas should be part of your secondary school memories... Or a Google click away :)
+The value of number π (Pi) is obtained with Math.PI in JavaScript.
+You might want to use the exponentiation operator ** to perform computations.
+
 */
 
-// TODO: complete program
+function circleCircumference(radius) {
+	//C = 2 * pi * Radius
+	// A =piRadius^2
 
-function calculate(num1, sign, num2) {
-	if (sign === "+") {
-		return num1 + num2;
-	} else if (sign === "-") {
-		return num1 - num2;
-	} else if (sign === "*") {
-		return num1 * num2;
-	} else if (sign === "/") {
-		return num1 / num2;
-	}
+	let pi = Math.PI;
+	let area = pi * radius * radius;
+	console.log(Number(area.toFixed(2)));
 }
-console.log(calculate(4, "+", 6)); // Must show 10
-console.log(calculate(4, "-", 6)); // Must show -2
-console.log(calculate(2, "*", 0)); // Must show 0
-console.log(calculate(12, "/", 0)); // Must show Infinity
+
+circleCircumference(16);
+
+// circleCircumference(5); //pi
+// circleCircumference(3);
+// console.log(2 ** 3); // 8: 2 * 2 * 2
+// console.log(3 ** 2); // 9: 3 * 3
+
+// /*
+// Calculator
+// Complete the following program so that it offers the four basic arithmetical operations: addition, subtraction, multiplication and division. You can use either a function declaration or a function expression.
+// */
+
+// // TODO: complete program
+
+// function calculate(num1, sign, num2) {
+// 	if (sign === "+") {
+// 		return num1 + num2;
+// 	} else if (sign === "-") {
+// 		return num1 - num2;
+// 	} else if (sign === "*") {
+// 		return num1 * num2;
+// 	} else if (sign === "/") {
+// 		return num1 / num2;
+// 	}
+// }
+// console.log(calculate(4, "+", 6)); // Must show 10
+// console.log(calculate(4, "-", 6)); // Must show -2
+// console.log(calculate(2, "*", 0)); // Must show 0
+// console.log(calculate(12, "/", 0)); // Must show Infinity
 
 /* 
 Minimum of two numbers
