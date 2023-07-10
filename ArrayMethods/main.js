@@ -104,3 +104,7 @@ function multipleOfIndex(array) {
 let multipleOfIndex = (a) => a.filter((n, i) => n % i === 0);
 
 // /https://www.codewars.com/kata/5a34b80155519e1a00000009/train/javascript
+
+function arrayPlusArray(arr1, arr2) {
+	return arr1.concat(arr2).reduce((a, c) => a + c, 0);
+}
