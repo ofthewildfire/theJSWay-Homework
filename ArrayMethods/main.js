@@ -101,5 +101,6 @@ function multipleOfIndex(array) {
 		return array.filter((item, index) => item % index === 0 || item === 0);
 	}
 }
+let multipleOfIndex = (a) => a.filter((n, i) => n % i === 0);
 
 // /https://www.codewars.com/kata/5a34b80155519e1a00000009/train/javascript
