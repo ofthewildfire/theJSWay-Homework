@@ -95,3 +95,11 @@ console.log(digitize(-4557));
 // 0 => [0]
 
 // console.log(smash(["hello", "world", "this", "is", "great"]));
+
+function multipleOfIndex(array) {
+	if (array.length > 1) {
+		return array.filter((item, index) => item % index === 0 || item === 0);
+	}
+}
+
+// /https://www.codewars.com/kata/5a34b80155519e1a00000009/train/javascript
